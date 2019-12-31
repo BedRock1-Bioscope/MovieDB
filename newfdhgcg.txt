@@ -1,8 +1,0 @@
-AAASSSSFFFFHHHH
-updated some change
-made the changes
-<<<<<<< HEAD
-heera made changes
-=======
-priya making changes
->>>>>>> af21ade6ea45a539ace0c4efc94f2408e908f633
