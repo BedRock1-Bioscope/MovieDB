@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box; background-color:white;}
+
+.outline{
+  display:grid;
+  background-color: white;
+  padding:10px;
+  margin-bottom: 0%;
+  margin-top:15%;
+}
+
+.logo{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 78px;
+  left: calc(50% - 25px);
+}
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 175%;
+  margin-bottom: 15px;
+  margin-left:-30%;
+}
+
+.icon {
+  padding: 10px;
+  background: black;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid black;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: black;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 175%;
+  opacity: 0.9;
+  margin-left:-30%;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+<div class="outline">
+<form action="/action_page.php" style="max-width:500px;margin:auto">
+  <img src="https://image.flaticon.com/icons/png/512/28/28319.png"  type="image" class="logo" alt="Director Form">
+  <!--<center><h2>Director Form</h2></center>-->
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Director name" name="Dirname">
+  </div>
+
+  <div class="input-container">
+    <i class="fa fa-birthday-cake icon"></i>
+    <input class="input-field" type="date" placeholder="DOB" name="dob">
+  </div>
+  
+  <div class="input-container">
+    <i class="fa fa-trademark icon"></i>
+    <input class="input-field" type="text" placeholder="Trade Mark" name="tmark">
+  </div>
+
+  <div class="input-container">
+    <i class="fa fa-globe icon"></i>
+    <input class="input-field" type="text" placeholder="Nationality" name="nationality">
+  </div>
+
+  <div class="input-container">
+    <i class="fa fa-trophy icon"></i>
+    <input class="input-field" type="text" placeholder="Awards" name="awards">
+  </div>
+
+  <div class="input-container">
+    <i class="fa fa-link icon"></i>
+    <input class="input-field" type="text" placeholder="Thumbnail" name="thumbnail">
+  </div>
+  <button type="submit" class="btn">Register</button>
+</form>
+</div>
+</body>
+</html>
