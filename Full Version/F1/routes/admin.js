@@ -72,28 +72,28 @@ router.post('/director/:id/delete', director_controller.director_delete_post);
 
 /// Actor ROUTES /// 
 
-// GET request for creating a Director. NOTE This must come before routes that display Director (uses id).
+// GET request for creating a Actor. NOTE This must come before routes that display Actor (uses id).
 router.get('/actor/create', actor_controller.actor_create_get);
 
-// POST request for creating director.
+// POST request for creating actor.
 router.post('/actor/create', actor_controller.actor_create_post);
 
-// GET request for one director.
+// GET request for one actor.
 router.get('/actor/:id', actor_controller.actor_detail);
 
-// GET request for list of all director.
+// GET request for list of all actor.
 router.get('/actor', actor_controller.actor_list);
 
-// GET request to update director.
+// GET request to update actor.
 router.get('/actor/:id/update', actor_controller.actor_update_get);
 
-// POST request to update director.
+// POST request to update actor.
 router.post('/actor/:id/update', actor_controller.actor_update_post);
 
-// GET request to delete director.
+// GET request to delete actor.
 router.get('/actor/:id/delete', actor_controller.actor_delete_get);
 
-// POST request to delete director.
+// POST request to delete actor.
 router.post('/actor/:id/delete', actor_controller.actor_delete_post);
 
 module.exports = router;
